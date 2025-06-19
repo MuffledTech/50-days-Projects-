@@ -1,0 +1,148 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  height: 100vh;
+  padding: 1rem;
+}
+
+/* Main container to align everything center */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header container */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Top paragraph (absolute at top) */
+.header p {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(24, 26, 34);
+  font-size: 35px;
+  font-family: 'Algerian', "Times New Roman", Times, serif;
+  font-weight: 100;
+  transition: font-size 0.5s ease-in-out;
+  text-align: center;
+}
+
+.header p:hover {
+  font-size: 40px;
+}
+
+/* Main heading */
+.header h1 {
+  color: rgb(14, 13, 13);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.header h1:hover {
+  font-size: 35px;
+}
+
+/* Card container */
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-in;
+  transform: translateY(0);
+  transition: background-color 0.3s ease, width 0.3s ease, transform 1s ease,;
+  overflow: hidden;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  background-color: #f5f4f6;
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Profile image */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  border: 3px solid #0f1113;
+}
+
+/* Name heading inside card */
+h1 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+/* Tagline under the name */
+.tagline {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Links container */
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Buttons */
+.links a {
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6c63ff;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on links */
+.links a:hover {
+  background-color: #574fd6;
+  transform: scale(1.05);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
