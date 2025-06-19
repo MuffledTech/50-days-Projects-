@@ -48,7 +48,7 @@ digital-card/
 
 ## 📬 Connect with Me
 
-[Instagram](https://instagram.com/yourhandle) | [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
+[Instagram](https://www.instagram.com) | [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/MuffledTech)
 
 ---
 
